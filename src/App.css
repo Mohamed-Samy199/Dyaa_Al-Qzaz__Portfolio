@@ -1,0 +1,49 @@
+:root {
+  --mainColor: #364BA0;
+  --textColor: white;
+  --lightColor: #FFFFFF;
+  --mainGold: #C5A363;
+}
+
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden !important;
+}
+
+body {
+  background-color: var(--lightColor);
+}
+
+::selection {
+  background-color: rgb(54, 75, 160, 0.9);
+  color: var(--lightColor);
+}
+
+.text-header {
+  font-size: 49px;
+}
+
+.text-large {
+  font-size: 38px;
+}
+
+.marquee-inner {
+  display: flex;
+  will-change: transform;
+}
+
+@keyframes scan {
+  from {
+    top: 0%;
+  }
+
+  to {
+    top: 100%;
+  }
+}
+
+.animate-scan {
+  animation: scan 4s linear infinite;
+}
